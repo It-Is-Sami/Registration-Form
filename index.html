@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="formBody">
+        <div class="title">
+            <h2>Registeration Form</h2>
+        </div>
+        <form action="" method="post">
+            <span id="errorMsgUser"></span>
+            <input id="FName" class="FName" name="FName" placeholder="First Name" type="text">
+            <input id="LName" class="LName" name="LName" placeholder="Last Name" type="text">
+            <input id="Email" class="Email" name="Email" placeholder="Email" type="email">
+            <input id="City" class="City" name="City" placeholder="City" type="text">
+            <input id="Country" class="Country" name="Country" placeholder="Country" type="text">
+            <label>
+                <select name="Gender" id="Gender" class="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </label>
+            <input id="submit" class="submit" name="submit" type="submit" onclick="handleForm (event)">
+        </form>
+    </div>
+    <div class="result_parent" id="result_parent">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
